@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alaska</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row titulo">      
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" class="imagen-logo"> 
+        <img src="assets/images/logo.png">
+      </div>  
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 icono">
+         <a href="https://facebook.com/alaska.castellanos.12" target="_blank"><img src="assets/images/facebook.svg" class="imagen-titulo float-right"></a> 
+         <a href="https://instagram.com/alaska_bisuteria?utm_source=ig_profile_share&igshid=8ts16s5fnspc" target="_blank"><img src="assets/images/instagram.svg" class="imagen-titulo float-right"></a>
+      </div>    
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="/inicio">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu" href="/catalogo">Catalogo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  menu" href="/informacion">Quienes somos</a>
+      </li>
+    </ul>
+  </div>
+  <app-root></app-root>
+</body>
+<footer>
+  <div class="container fluid pie">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div>
+          <span class="titulo-pie">Horario de atención</span>
+        </div>
+        <div>
+          Lunes a Viernes 8am - 8pm
+        </div>
+        <div>
+          Sabados 8am - 3pm
+        </div>
+        <div>
+          Domingos 8am - 2pm
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div>
+          <span class="titulo-pie">Telefonos</span>
+        </div>
+        <div>
+          3012275626
+        </div>
+        <div>
+          3154939502
+        </div>
+        <div>
+          3143660786
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCRvc_orvsbu5ZIypgv7024m78Xc7lKyKE",
+    authDomain: "alaska-app.firebaseapp.com",
+    databaseURL: "https://alaska-app.firebaseio.com",
+    projectId: "alaska-app",
+    storageBucket: "alaska-app.appspot.com",
+    messagingSenderId: "410953197451"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

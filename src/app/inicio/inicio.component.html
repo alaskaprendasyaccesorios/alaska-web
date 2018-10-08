@@ -1,0 +1,19 @@
+<div class="container contenedor">
+  <div class="row">
+    <h2>IDENTIFICA TU ESTILO</h2>
+    <p>
+    ALASKA FASHION STYLE OFRECE A SUS CLIENTES, HOMBRES Y MUJERES BUZOS,  TEJIDOS DE ALTA CALIDAD, ADEMAS OFRECEMOS COLLARES, ARETES, PULSERAS,  ELABORADAS CON PIEDRAS NATURALES Y ESTILOS PERSONALIZADOS
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" *ngFor="let item of catalogo">
+      <div class="card tarjeta" style="width: 20rem;">
+        <img class="card-img-top IMG-THUMBNAIL" [src]="item.imagen" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">{{item.titulo}}</h4>
+          <span class="card-text texto">{{item.descripcion}}</span>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

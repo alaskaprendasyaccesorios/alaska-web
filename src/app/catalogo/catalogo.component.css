@@ -1,0 +1,27 @@
+.tarjeta {
+    margin: 1rem;
+    /* min-height: 490px; */
+    background-color: white;
+    color: #00084B;
+}
+img {height:250px;
+    width:100%;}
+
+.texto {
+    margin-left: 1rem;
+}
+p {
+    padding: 1rem;
+    color: white;
+}
+h2 {
+    padding: 1rem;
+    color: #585858;
+}
+h4 {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+a {
+    margin: 1rem;
+}

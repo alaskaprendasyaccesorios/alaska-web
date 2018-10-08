@@ -1,0 +1,26 @@
+<div class="container contenedor detalle">
+  <div class="row">
+      <h1>
+        {{detalle.titulo}}
+      </h1>
+  </div>
+  <div class="row">
+      <img [src]="detalle.imagen">
+    </div>
+  <div class="row">
+    <p class="precio">
+      Precio de venta : {{detalle.precio}}
+    </p>
+  </div>
+  <div class="row">
+    <p>
+      {{detalle.descripcion}}
+    </p>
+  </div>
+  <hr>
+  <div class="row">
+      <p>
+        {{detalle.adicional}}
+      </p>
+    </div>
+</div>

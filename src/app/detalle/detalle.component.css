@@ -1,0 +1,12 @@
+.detalle {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+}
+.precio {
+    font-size: 2rem;
+}
+
+img {
+    height:300px;
+    width:300px;
+}

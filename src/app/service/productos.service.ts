@@ -28,7 +28,7 @@ export class ProductosService {
       "titulo": "Busos",
       "descripcion": "Busos para hombres y mujeres visita nuestro catalogo de busos",
       "adicional": "Ombliguero",
-      "imagen": "../../assets/images/Referencia 156.png"
+      "imagen": "../../assets/images/busos/Referencia 156.png"
     }];
     this.bisuteria = [
       {

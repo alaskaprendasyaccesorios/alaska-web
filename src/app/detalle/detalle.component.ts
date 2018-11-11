@@ -8,18 +8,30 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetalleComponent implements OnInit {
   public catalogo: any;
-  public detalle : any;
+  public detalle: any;
   private id: number;
   private sub: any;
+  private parametro: any;
   constructor(private servicio: ProductosService, private route: ActivatedRoute) {
-    this.catalogo = servicio.obtenerProductos();
+    this.detalle = {};
   }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.id = +params['id'];
-      this.detalle = this.catalogo.find(c => c.id == this.id);
-   });
+      this.parametro = +params['catalogo'];
+      if (this.parametro == '1') {
+        this.catalogo = this.servicio.obtenerBusos();
+        this.detalle = this.catalogo.find(c => c.id == this.id);
+        return
+      }
+      if (this.parametro == '2') {
+        this.catalogo = this.servicio.obtenerBisuteria();
+        this.detalle = this.catalogo.find(c => c.id == this.id);
+        return
+      }
+
+    });
   }
 
 }

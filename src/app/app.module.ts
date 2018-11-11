@@ -12,8 +12,9 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'informacion', component: InformcionComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'catalogo', component: CatalogoComponent },
-  { path: 'detalle/:id', component: DetalleComponent },
+  { path: 'catalogo/:id', component: CatalogoComponent },
+  { path: 'catalogo/:id', component: CatalogoComponent },
+  { path: 'detalle/:id/:catalogo', component: DetalleComponent },
   { path: '**', redirectTo: '/inicio' }
 ];
 

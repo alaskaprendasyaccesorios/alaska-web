@@ -4,10 +4,21 @@
       <div class="card tarjeta" style="width: 20rem;">
         <img class="card-img-top IMG-THUMBNAIL" [src]="item.imagen" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">{{item.titulo}}</h4>
-          <span class="card-text texto">{{item.descripcion}}</span>
-          <p>Precio : {{item.precio}}</p>
-          <a [routerLink]="['/detalle', item.id]" class="btn btn-primary">Ver mas...</a>
+          <h4 class="card-title">{{item.referencia}}</h4>
+          <div><b class="texto">
+              Colores disponibles
+            </b>
+          </div>
+          <div>
+            <span class="card-text texto">{{item.descripcion}}</span>
+          </div>
+          <div>
+            <b class="texto">Precio :</b>
+          </div>
+          <div>
+            <span class="texto"> {{item.precio}}</span>
+          </div>
+          <a [routerLink]="['/detalle', item.id, id]" class="btn btn-primary">Ver mas...</a>
         </div>
       </div>
     </div>

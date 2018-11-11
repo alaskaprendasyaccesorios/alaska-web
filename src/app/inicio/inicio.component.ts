@@ -10,7 +10,7 @@ export class InicioComponent implements OnInit {
 
   public catalogo : any;
   constructor(private servicio : ProductosService) {
-    this.catalogo = servicio.obtenerProductos();
+    this.catalogo = servicio.obtenerInicio();
    }
 
   ngOnInit() {

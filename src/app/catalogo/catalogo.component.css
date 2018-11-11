@@ -25,3 +25,9 @@ h4 {
 a {
     margin: 1rem;
 }
+
+.colores{
+    white-space: nowrap;
+    overflow: hidden;
+text-overflow: ellipsis;
+}

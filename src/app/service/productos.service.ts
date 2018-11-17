@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -7,7 +8,7 @@ export class ProductosService {
   public catalogo: any;
   private inicio: any;
   public bisuteria: any;
-  constructor() {
+  constructor(private http: HttpClient) {
     this.inicio = [{
       "id": "2",
       "referencia": "W 145",
@@ -471,7 +472,8 @@ export class ProductosService {
         "talla": "M  L",
         "descripcion": "Vino tinto/ Negro",
         "adicional": "N/A",
-        "imagen": "../../assets/images/busos/Referencia 145.png"
+        "imagen": "../../assets/images/busos/Referencia 145.png",
+        "pago": "https://biz.payulatam.com/L0bbbe902CAC96D"
       },
       {
         "id": "2",
@@ -804,6 +806,11 @@ export class ProductosService {
         "imagen": "../../assets/images/busos/Referencia 091.png"
       }
     ]
+  }
+
+
+  public enviarCorreo = (usuario: any): Observable<any> => {
+    return this.http.post('https://alaskaservices20181116061640.azurewebsites.net/api/Values', usuario);
   }
 
   public obtenerInicio = () => {

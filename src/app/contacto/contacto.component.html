@@ -1,17 +1,24 @@
-<form>
+
     <div class="container contenedor">
       <div class="form-group">
         <hr>
-        <p>Ingresa tu correo electronico y en breve nos pondremos en contacto</p>
+        <p>Ingresa tus datos de contacto y en breve nos pondremos en contacto contigo (aplica para colombia)</p>
         <hr>
-        <p>Correo Electronico : </p>
+        <p>Nombre Completo : </p>
         <div>
-          <input required type="email" class="form-control"  />
+          <input required type="text" [(ngModel)]="usuario.username" class="form-control"  />
+        </div>
+        <p>Telefono : </p>
+        <div>
+          <input required type="tel" [(ngModel)]="usuario.telefono" class="form-control"  />
+        </div>
+        <p>Direccion : </p>
+        <div>
+          <input required type="text" [(ngModel)]="usuario.direccion" class="form-control"  />
         </div>
         <p>Asunto</p>
-        <textarea required class="form-control"></textarea>
+        <textarea required class="form-control" [(ngModel)]="usuario.mensaje"></textarea>
         <hr>
-        <input type="submit"   class="btn btn-primary" value="Enviar"/>
+        <input type="submit"   class="btn btn-primary" (click)="enviarMensaje()" value="Enviar"/>
       </div>
     </div>
-  </form>

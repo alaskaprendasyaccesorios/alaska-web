@@ -1,45 +1,45 @@
 <div class="container contenedor detalle">
+  <!-- <div class="row">
+      <a href="{{detalle.pago}}"><img style="width: 7rem;
+        height: 3rem;" src="http://www.payulatam.com/img-secure-2015/boton_pagar_grande.png"></a>
+  </div> -->
   <div class="row">
     <h1>
       Referencia: {{detalle.referencia}}
     </h1>
   </div>
   <div class="row">
-    <img [src]="detalle.imagen">
-  </div>
-  <div class="row">
-    <p class="precio">
-      Precio de venta : {{detalle.precio}}
-    </p>
-  </div>
-  <div class="row">
-    <b>
-      Colores disponibles:
-    </b>
-  </div>
-  <div class="row">
-    <p>
-      {{detalle.descripcion}}
-    </p>
-  </div>
-  <div class="row">
-    <b>
-        Tallas:
-    </b>
-  </div>
-  <div class="row">
-    <p>
-       {{detalle.talla}}
-    </p>
-  </div>
-  <div class="row">
-      <b>
-          Descripcion:
-      </b>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+      <img [src]="detalle.imagen">
     </div>
-  <div class="row">
-    <p>
-       {{detalle.adicional}}
-    </p>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+      <p class="precio">
+        Precio de venta : {{detalle.precio}}
+      </p>
+      <div>
+        <b>
+          Colores disponibles:
+        </b>
+        <p>
+          {{detalle.descripcion}}
+        </p>
+      </div>
+      <div>
+        <b>
+          Tallas:
+        </b>
+        <p>
+          {{detalle.talla}}
+        </p>
+      </div>
+      <div>
+        <b>
+          Descripcion:
+        </b>
+        <p>
+          {{detalle.adicional}}
+        </p>
+      </div>
+    </div>
   </div>
 </div>

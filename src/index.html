@@ -8,13 +8,23 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129353146-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129353146-1');
+</script>
+
 </head>
 
 <body>
   <div class="container">
     <div class="row titulo">      
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" class="imagen-logo"> 
-        <img src="assets/images/logo.png">
+        <img style="width: 21rem; padding: 0.5rem" src="assets/images/logo.png">
       </div>  
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 icono">
          <a href="https://facebook.com/alaska.castellanos.12" target="_blank"><img src="assets/images/facebook.svg" class="imagen-titulo float-right"></a> 
@@ -34,6 +44,9 @@
       <li class="nav-item">
         <a class="nav-link  menu" href="/informacion">Quienes somos</a>
       </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link  menu" href="/contacto">Contactanos</a>
+      </li> -->
     </ul>
   </div>
   <app-root></app-root>
